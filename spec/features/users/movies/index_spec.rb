@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User Story 10' do
   before(:each) do
-    @stan = create(:user)
+    @stan = create(:user, password: "test123")
     visit user_discover_index_path(@stan)
   end
   

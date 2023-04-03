@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "User's Discover Index", type: :feature do
   before(:each) do
-    @stan = User.create!(name: "Stan Johnson", email: "stan@example.com")
+    @stan = User.create!(name: "Stan Johnson", email: "stan@example.com", password: "test123")
     visit user_discover_index_path(@stan)
   end
 

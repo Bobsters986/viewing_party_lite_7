@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Movie Details Page' do
   before(:each) do
-    @stan = create(:user)
+    @stan = create(:user, password: "test123")
 
     # VCR.insert_cassette(:movie_by_id_info, serialize_with: :json) do
     #   VCR.insert_cassette(:cast_info, serialize_with: :json) do
