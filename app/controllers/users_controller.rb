@@ -32,7 +32,6 @@ class UsersController < ApplicationController
     else
       flash[:error] = "Incorrect email or password"
       render :login_form
-      # redirect_to "/login"
     end
   end
 
