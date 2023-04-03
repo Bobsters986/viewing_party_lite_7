@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   get "/register", to: "users#new"
-
   post "/register", to: "users#create"
 
   resources :users, only: %i[create show] do
@@ -16,4 +15,7 @@ Rails.application.routes.draw do
       resources :viewing_party, only: [:new, :create], controller: 'parties'
     end
   end
+
+  get "/login", to: "users#login_form"
+  post "/login", to: "users#login_user"
 end
