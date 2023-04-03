@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'User Story 12' do
   before(:each) do
-    @user = create(:user)
-    @friend_1 = create(:user)
-    @friend_2 = create(:user)
-    @friend_3 = create(:user)
+    @user = create(:user, password: "test123")
+    @friend_1 = create(:user, password: "test124")
+    @friend_2 = create(:user, password: "test125")
+    @friend_3 = create(:user, password: "test126")
 
     VCR.use_cassette(:batman_doom, serialize_with: :json, :record => :new_episodes) do
       visit new_user_movie_viewing_party_path(@user, 1003579)

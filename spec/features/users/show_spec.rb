@@ -2,10 +2,10 @@ require "rails_helper"
 
 RSpec.describe "User Registration", type: :feature do
   before(:each) do
-    @stan = User.create!(name: "Stan Johnson", email: "stan@example.com")
-    @ben = create(:user)
-    @sarah = create(:user)
-    @jill = create(:user)
+    @stan = User.create!(name: "Stan Johnson", email: "stan@example.com", password: "test123")
+    @ben = create(:user, password: "test124")
+    @sarah = create(:user, password: "test125")
+    @jill = create(:user, password: "test126")
 
     @my_party = create(:party, host_id: @stan.id, movie_id: 550, day: "2023-03-26", time: "20:00")
     @their_party = create(:party, host_id: @ben.id, movie_id: 550, day: "2023-03-31", time: "19:00")
