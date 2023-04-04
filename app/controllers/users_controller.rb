@@ -32,8 +32,14 @@ class UsersController < ApplicationController
       redirect_to "/users/#{user.id}"
     else
       flash[:error] = "Incorrect email or password"
-      render :login_form
+      redirect_to "/login"
     end
+  end
+
+  def logout
+    reset_session
+    flash[:success] = "You have been logged out"
+    redirect_to root_path
   end
 
   private
