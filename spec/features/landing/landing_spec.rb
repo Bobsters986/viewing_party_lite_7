@@ -18,16 +18,19 @@ RSpec.describe "Landing", type: :feature do
       expect(current_path).to eq(register_path)
     end
 
-    it "shows the existing users as a link to their dashboard" do
-      within("#user_#{@user_1.id}") do
-        expect(page).to have_link("#{@user_1.name} - #{@user_1.email}", href: user_path(@user_1.id))
-      end
-      within("#user_#{@user_2.id}") do
-        expect(page).to have_link("#{@user_2.name} - #{@user_2.email}", href: user_path(@user_2.id))
-      end
-      within("#user_#{@user_3.id}") do
-        expect(page).to have_link("#{@user_3.name} - #{@user_3.email}", href: user_path(@user_3.id))
-      end
+    it "when user is logged in, it shows the existing users" do
+      click_link "Log In"
+
+      fill_in :email, with: @user_1.email
+      fill_in :password, with: @user_1.password
+
+      click_on "Log In"
+      click_link "Home"
+
+      expect(page).to have_content("Existing Users")
+      expect(page).to have_content("#{@user_1.name} - #{@user_1.email}")
+      expect(page).to have_content("#{@user_2.name} - #{@user_2.email}")
+      expect(page).to have_content("#{@user_3.name} - #{@user_3.email}")
     end
 
     it "has a link to the landing page" do
