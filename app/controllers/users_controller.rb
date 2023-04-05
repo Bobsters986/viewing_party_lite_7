@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :require_user, only: [:show]
+
   def new
     @user = User.new
   end
@@ -32,13 +34,26 @@ class UsersController < ApplicationController
       redirect_to "/users/#{user.id}"
     else
       flash[:error] = "Incorrect email or password"
-      render :login_form
+      redirect_to "/login"
     end
+  end
+
+  def logout
+    reset_session
+    flash[:success] = "You have been logged out"
+    redirect_to root_path
   end
 
   private
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+
+  def require_user
+    if session[:user_id].nil?
+      flash[:error] = "You must be logged in or registered to view this page"
+      redirect_to root_path
+    end
   end
 end

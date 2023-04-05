@@ -24,12 +24,20 @@ RSpec.describe "User Registration", type: :feature do
       stub_request(:get, "https://api.themoviedb.org/3/movie/550?api_key=108e8ef231bf49bc3de4db0a0c14366c").
         to_return(status: 200, body: json_response)
 
-    visit user_path(@stan)
+    visit root_path
+
+    click_link "Log In"
+
+    fill_in :email, with: @stan.email
+    fill_in :password, with: @stan.password
+
+    click_on "Log In"
   end
 
   describe "User Story 6" do
     describe "As a user, when I visit a users dashboard page(/users/:id})" do
       it "I should see the name of the user's dashboard" do
+        save_and_open_page
         expect(page).to have_content("#{@stan.name}'s Dashboard")
       end
 

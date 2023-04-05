@@ -8,6 +8,11 @@ RSpec.describe 'User Story 12' do
     @friend_3 = create(:user, password: "test126")
 
     VCR.use_cassette(:batman_doom, serialize_with: :json, :record => :new_episodes) do
+      visit root_path
+      click_link "Log In"
+      fill_in :email, with: @user.email
+      fill_in :password, with: @user.password
+      click_on "Log In"
       visit new_user_movie_viewing_party_path(@user, 1003579)
     end
   end

@@ -36,6 +36,11 @@ RSpec.describe 'Movie Details Page' do
         VCR.insert_cassette(:movie_by_id_info, serialize_with: :json) do
           VCR.insert_cassette(:cast_info, serialize_with: :json) do
             VCR.insert_cassette(:review_info, serialize_with: :json) do
+              visit root_path
+            click_link "Log In"
+            fill_in :email, with: @user_1.email
+            fill_in :password, with: @user_1.password
+            click_on "Log In"
               visit user_movie_path(@stan, 550)
               click_button "Create Viewing Party for Fight Club"
               
