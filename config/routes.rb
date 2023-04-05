@@ -16,6 +16,11 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :admin do
+    resources :dashboard, only: [:index]
+    resources :users, only: [:show]
+  end
+
   resources :sessions, only: [:new, :create, :destroy]
   # get "/login", to: "users#login_form"
   # post "/login", to: "users#login_user"

@@ -10,12 +10,3 @@
   <%= link_to "Log In", new_session_path %>
   <%= button_to "Create New User", register_path, method: :get %>
 <% end %>
-
-<% if current_admin %>
-  <h3>Existing Users</h3>
-  <% @users.each do |user| %>
-    <div id ="user_<%= user.id %>">
-      <%= link_to "#{user.name} - #{user.email}", user_path %>
-    </div>
-  <% end %>
-<% end %>
