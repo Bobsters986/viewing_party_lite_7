@@ -8,14 +8,14 @@ RSpec.describe "Logging In" do
 
     click_link "Log In"
 
-    expect(current_path).to eq(login_path)
+    expect(current_path).to eq("/sessions/new")
 
     fill_in :email, with: user.email
     fill_in :password, with: user.password
 
     click_on "Log In"
 
-    expect(current_path).to eq("/users/#{user.id}")
+    expect(current_path).to eq("/dashboard")
 
     expect(page).to have_content("Welcome, #{user.name}")
   end
@@ -27,14 +27,14 @@ RSpec.describe "Logging In" do
 
     click_link "Log In"
 
-    expect(current_path).to eq(login_path)
+    expect(current_path).to eq("/sessions/new")
 
     fill_in :email, with: user.email
     fill_in :password, with: "wrong_password"
 
     click_on "Log In"
 
-    expect(current_path).to eq(login_path)
+    expect(current_path).to eq("/sessions/new")
 
     expect(page).to have_content("Incorrect email or password")
   end

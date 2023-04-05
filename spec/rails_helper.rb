@@ -82,3 +82,11 @@ RSpec.configure do |config|
     config.configure_rspec_metadata!
   end
 end
+
+def log_in(user)
+  visit root_path
+  click_on "Log In"
+  fill_in :email, with: user.email
+  fill_in :password, with: user.password
+  click_on "Log In"
+end

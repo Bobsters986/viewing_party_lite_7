@@ -20,10 +20,7 @@ describe "User Registration", :vcr do
     UserParty.create!(user_id: @sarah.id, party_id: @their_party.id)
     UserParty.create!(user_id: @jill.id, party_id: @their_party.id)
 
-    visit login_path
-    fill_in :email, with: @stan.email
-    fill_in :password, with: @stan.password
-    click_button "Log In"
+    log_in(@stan)
   end
 
   context "US6 As a user, when I visit a users dashboard page" do
@@ -45,7 +42,7 @@ describe "User Registration", :vcr do
     it "when I click the 'Discover Movies' button, I am routed to the discover page" do
       click_button "Discover Movies"
 
-      expect(current_path).to eq("/users/#{@stan.id}/discover")
+      expect(current_path).to eq("/dashboard/discover")
     end
   end
 

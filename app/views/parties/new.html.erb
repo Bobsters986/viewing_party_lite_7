@@ -1,11 +1,11 @@
 <center><h4>Create a Movie Party for <%= @movie_facade.movie.title %></h4></center>
 
-<center><%= button_to "Discover Page", user_discover_index_path(@user), method: :get %></center><br>
+<center><%= button_to "Discover Page", "/dashboard/discover", method: :get %></center><br>
 
 <center><div id="party_form">
   <strong>Viewing Party Details</strong>
   
-  <%= form_with url: "/users/#{@user.id}/movies/#{@movie_facade.movie.id}/viewing_party", method: :post, local: :true do |f| %>
+  <%= form_with url: "/dashboard/movies/#{@movie_facade.movie.id}/viewing_party", method: :post, local: :true do |f| %>
     <%= f.label :duration, "Duration of Party" %>
     <%= f.number_field :duration, value: @movie_facade.movie.runtime %><br>
     <%= f.label :day, "Day" %>

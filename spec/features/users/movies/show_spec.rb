@@ -6,21 +6,21 @@ describe 'Movie Details Page', :vcr do
     before(:each) do
       @stan = create(:user, password: "test123")
 
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@stan)
+      log_in(@stan)
 
-      visit user_movie_path(@stan, 550) #Fight Club id is 550
+      visit user_movie_path(550) #Fight Club id is 550
     end
       
     it "I see a button to return to the discover page" do
       click_button "Discover Page"
       
-      expect(current_path).to eq(user_discover_index_path(@stan))
+      expect(current_path).to eq("/dashboard/discover")
     end
 
     it "I see a button to create a new viewing party" do
       click_button "Create Viewing Party for Fight Club"
       
-      expect(current_path).to eq("/users/#{@stan.id}/movies/550/viewing_party/new")
+      expect(current_path).to eq("/dashboard/movies/550/viewing_party/new")
     end
 
     it "shows the title, vote_avg, runtime, genres, summary, cast, reviews" do

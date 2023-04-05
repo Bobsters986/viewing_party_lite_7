@@ -3,7 +3,9 @@ require "rails_helper"
 describe "User's Discover Index User Story 9", :vcr do
   before(:each) do
     @stan = User.create!(name: "Stan Johnson", email: "stan@example.com", password: "test123")
-    visit user_discover_index_path(@stan)
+
+    log_in(@stan)
+    visit user_discover_index_path
   end
 
   describe "As a user, when I visit a users discover page" do
@@ -12,7 +14,7 @@ describe "User's Discover Index User Story 9", :vcr do
 
       click_button "Find Top Rated Movies"
 
-      expect(current_path).to eq("/users/#{@stan.id}/movies")
+      expect(current_path).to eq("/dashboard/movies")
     end
 
     it "I see see a text field to enter keyword(s) to search by movie title" do
@@ -29,7 +31,7 @@ describe "User's Discover Index User Story 9", :vcr do
 
         click_button "Find Movies"
 
-        expect(current_path).to eq("/users/#{@stan.id}/movies")
+        expect(current_path).to eq("/dashboard/movies")
       end
     end
   end
