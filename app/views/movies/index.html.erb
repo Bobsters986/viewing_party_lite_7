@@ -1,13 +1,13 @@
-<%= button_to "Discover Page", user_discover_index_path(@user), method: :get %><b>
+<%= button_to "Discover Page", "/dashboard/discover", method: :get %><b>
 
 <ol>
   <% if params[:top_rated] %>
     <% @movies.top_rated.each do |movie| %>
-      <li><%= link_to movie.title, "/users/#{@user.id}/movies/#{movie.id}" %> - Vote Average: <%= movie.vote_average %></li>
+      <li><%= link_to movie.title, "dashboard/movies/#{movie.id}" %> - Vote Average: <%= movie.vote_average %></li>
     <% end %>
   <% elsif params[:search] %>
     <% @movies.search(params[:search]).each do |movie| %>
-      <li><%= link_to movie.title, "/users/#{@user.id}/movies/#{movie.id}" %> - Vote Average: <%= movie.vote_average %></li>
+      <li><%= link_to movie.title, "dashboard/movies/#{movie.id}" %> - Vote Average: <%= movie.vote_average %></li>
     <% end %>
   <% end %>
 </ol>

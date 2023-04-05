@@ -1,8 +1,8 @@
 <h2><%= @movie_facade.movie.title %></h2>
 
-<%= button_to "Discover Page", user_discover_index_path(@user), method: :get %><br>
+<%= button_to "Discover Page", "/dashboard/discover", method: :get %><br>
 
-<%= button_to "Create Viewing Party for #{@movie_facade.movie.title}", "/users/#{@user.id}/movies/#{@movie_facade.movie.id}/viewing_party/new", method: :get %><br>
+<%= button_to "Create Viewing Party for #{@movie_facade.movie.title}", "/dashboard/movies/#{@movie_facade.movie.id}/viewing_party/new", method: :get %><br>
 
 <section id = "movie_info">
   

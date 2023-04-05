@@ -13,7 +13,7 @@ RSpec.describe "Logging In" do
 
     click_on "Log In"
 
-    expect(current_path).to eq("/users/#{user.id}")
+    expect(current_path).to eq("/dashboard")
     
     # allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 

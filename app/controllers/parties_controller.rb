@@ -3,9 +3,9 @@ class PartiesController < ApplicationController
   def new
     if current_user.nil?
       flash[:error] = "You must be logged in or registered to create a viewing party"
-      redirect_to user_movie_path(params[:user_id], params[:movie_id])
+      redirect_to user_movie_path(params[:movie_id])
     else
-      @user = User.find(params[:user_id])
+      @user = User.find_by(id: session[:user_id])
       @movie_facade = MovieFacade.new(params[:movie_id])
       @users = User.all
     end

@@ -24,7 +24,7 @@ RSpec.describe "Visitor Landing", type: :feature do
     end
 
     it "if a visitor tries to visit another user's show page, they are redirected to the root" do
-      visit "/users/#{@user_1.id}"
+      visit "/dashboard"
 
       expect(page).to have_content("You must be logged in or registered to view this page")
       expect(current_path).to eq(root_path)

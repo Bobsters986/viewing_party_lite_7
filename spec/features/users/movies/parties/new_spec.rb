@@ -7,9 +7,8 @@ describe 'New Viewing Party Creation User Story 12', :vcr do
     @friend_2 = create(:user, password: "test125")
     @friend_3 = create(:user, password: "test126")
 
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
-
-    visit new_user_movie_viewing_party_path(@user, 1003579)
+    log_in(@user)
+    visit new_user_movie_viewing_party_path(1003579)
   end
 
   it "shows the movie title" do

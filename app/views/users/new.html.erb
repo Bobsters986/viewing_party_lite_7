@@ -1,7 +1,7 @@
 <h3>Register a New User</h3>
 
 <div id = "new_user">
-  <%= form_with model: @user, local: true do |f| %>
+  <%= form_with url: register_path, method: :post, local: true do |f| %>
     <%= f.label :name, "Name:" %>
     <%= f.text_field :name %><br><br>
     <%= f.label :email, "Email:" %>
