@@ -23,27 +23,6 @@ class UsersController < ApplicationController
     @movie_facade = MovieFacade.new
   end
 
-  # def login_form
-  # end
-
-  # def login_user
-  #   user = User.find_by(email: params[:email])
-  #   if user && user.authenticate(params[:password])
-  #     session[:user_id] = user.id
-  #     flash[:success] = "Welcome, #{user.name}!"
-  #     redirect_to "/users/#{user.id}"
-  #   else
-  #     flash[:error] = "Incorrect email or password"
-  #     redirect_to "/login"
-  #   end
-  # end
-
-  # def logout
-  #   reset_session
-  #   flash[:success] = "You have been logged out"
-  #   redirect_to root_path
-  # end
-
   private
 
   def user_params

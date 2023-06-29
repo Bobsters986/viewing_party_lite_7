@@ -25,36 +25,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 04 Apr 2023 22:38:31 GMT
+      - Wed, 28 Jun 2023 21:51:42 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=22879
+      - public, max-age=22866
       X-Memc:
       - HIT
       X-Memc-Key:
       - befdb093a375fc558ec41211328ab887
       X-Memc-Age:
-      - '2937'
+      - '22295'
       X-Memc-Expires:
-      - '23481'
+      - '878'
       Etag:
-      - W/"a01a61476545522d126949f8c48b8a56"
+      - W/"2b160918d9080b4ccbd6ef53aed81617"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 1c80fe425edf82026702c486fb324fd0.cloudfront.net (CloudFront)
+      - 1.1 e4ca364cc5959e3bf697ae231c5b56b0.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - VTSdoIXW1BrCE_LlllZfhHGQTtDbRLpy1rDobLo10abISAOYdwGkCA==
+      - d2-WASnrMXf8Z9psiGpT4-t-8-qBsZN6Utp4VEMAOacjoopzOdIoOA==
       Age:
-      - '7239'
+      - '844'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/7eccX0xay9pDj6ZQvU4cu3whw18.jpg","belongs_to_collection":null,"budget":0,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":27,"name":"Horror"},{"id":28,"name":"Action"},{"id":9648,"name":"Mystery"}],"homepage":"","id":1003579,"imdb_id":"tt24223450","original_language":"en","original_title":"Batman:
@@ -62,13 +62,13 @@ http_interactions:
         unleashes an ancient evil, and returns to Gotham after being away for two
         decades. There, Batman battles Lovecraftian supernatural forces and encounters
         allies and enemies such as Green Arrow, Ra''s al Ghul, Mr. Freeze, Killer
-        Croc, Two-Face and James Gordon.","popularity":869.567,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
+        Croc, Two-Face and James Gordon.","popularity":79.862,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
         Entertainment","origin_country":"US"},{"id":2785,"logo_path":"/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png","name":"Warner
         Bros. Animation","origin_country":"US"},{"id":14772,"logo_path":"/1XTIrcpK2JgnKn1RYgsPEJiUO0k.png","name":"Warner
         Bros. Home Entertainment Group","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2023-03-10","revenue":0,"runtime":86,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"Batman:
-        The Doom That Came to Gotham","video":false,"vote_average":6.439,"vote_count":49}'
-  recorded_at: Wed, 05 Apr 2023 00:39:10 GMT
+        The Doom That Came to Gotham","video":false,"vote_average":6.722,"vote_count":108}'
+  recorded_at: Wed, 28 Jun 2023 22:05:46 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/1003579?api_key=<MOVIE_API_KEY>
@@ -94,36 +94,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 04 Apr 2023 22:38:31 GMT
+      - Wed, 28 Jun 2023 21:51:42 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=22879
+      - public, max-age=22866
       X-Memc:
       - HIT
       X-Memc-Key:
       - befdb093a375fc558ec41211328ab887
       X-Memc-Age:
-      - '2937'
+      - '22295'
       X-Memc-Expires:
-      - '23481'
+      - '878'
       Etag:
-      - W/"a01a61476545522d126949f8c48b8a56"
+      - W/"2b160918d9080b4ccbd6ef53aed81617"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 1c80fe425edf82026702c486fb324fd0.cloudfront.net (CloudFront)
+      - 1.1 e1b5abb53c407f0a057625c46693461c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 0vyLeHB7RiivgSL11RRXFLkE7hFJ8zC-RZJ9cYHXuunEUGFtE5DDbw==
+      - XyS2zQZL0kVuaMjrQvfTrmUBVzX2zxMNo6BSB8yY8wjH7i6tTRIm7g==
       Age:
-      - '7239'
+      - '845'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/7eccX0xay9pDj6ZQvU4cu3whw18.jpg","belongs_to_collection":null,"budget":0,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":27,"name":"Horror"},{"id":28,"name":"Action"},{"id":9648,"name":"Mystery"}],"homepage":"","id":1003579,"imdb_id":"tt24223450","original_language":"en","original_title":"Batman:
@@ -131,13 +131,13 @@ http_interactions:
         unleashes an ancient evil, and returns to Gotham after being away for two
         decades. There, Batman battles Lovecraftian supernatural forces and encounters
         allies and enemies such as Green Arrow, Ra''s al Ghul, Mr. Freeze, Killer
-        Croc, Two-Face and James Gordon.","popularity":869.567,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
+        Croc, Two-Face and James Gordon.","popularity":79.862,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
         Entertainment","origin_country":"US"},{"id":2785,"logo_path":"/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png","name":"Warner
         Bros. Animation","origin_country":"US"},{"id":14772,"logo_path":"/1XTIrcpK2JgnKn1RYgsPEJiUO0k.png","name":"Warner
         Bros. Home Entertainment Group","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2023-03-10","revenue":0,"runtime":86,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"Batman:
-        The Doom That Came to Gotham","video":false,"vote_average":6.439,"vote_count":49}'
-  recorded_at: Wed, 05 Apr 2023 00:39:10 GMT
+        The Doom That Came to Gotham","video":false,"vote_average":6.722,"vote_count":108}'
+  recorded_at: Wed, 28 Jun 2023 22:05:46 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/1003579?api_key=<MOVIE_API_KEY>
@@ -163,36 +163,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 04 Apr 2023 22:38:31 GMT
+      - Wed, 28 Jun 2023 21:51:42 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=22879
+      - public, max-age=22866
       X-Memc:
       - HIT
       X-Memc-Key:
       - befdb093a375fc558ec41211328ab887
       X-Memc-Age:
-      - '2937'
+      - '22295'
       X-Memc-Expires:
-      - '23481'
+      - '878'
       Etag:
-      - W/"a01a61476545522d126949f8c48b8a56"
+      - W/"2b160918d9080b4ccbd6ef53aed81617"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 f0a2a95cb4d25b2414a9c1a7a754943e.cloudfront.net (CloudFront)
+      - 1.1 38059ba65876500c040fb73e2cbaebf4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - CaRzl-83QQeL_NP0b4yORvu_j2_EbYAjx8JrUXQuvZUABghAKkH6IA==
+      - KISQ36EgGW_g_ErgNTndrvNvKtKUQWn2jduAITE2Xe7V4-Xb3UgxFA==
       Age:
-      - '7239'
+      - '845'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/7eccX0xay9pDj6ZQvU4cu3whw18.jpg","belongs_to_collection":null,"budget":0,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":27,"name":"Horror"},{"id":28,"name":"Action"},{"id":9648,"name":"Mystery"}],"homepage":"","id":1003579,"imdb_id":"tt24223450","original_language":"en","original_title":"Batman:
@@ -200,13 +200,13 @@ http_interactions:
         unleashes an ancient evil, and returns to Gotham after being away for two
         decades. There, Batman battles Lovecraftian supernatural forces and encounters
         allies and enemies such as Green Arrow, Ra''s al Ghul, Mr. Freeze, Killer
-        Croc, Two-Face and James Gordon.","popularity":869.567,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
+        Croc, Two-Face and James Gordon.","popularity":79.862,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
         Entertainment","origin_country":"US"},{"id":2785,"logo_path":"/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png","name":"Warner
         Bros. Animation","origin_country":"US"},{"id":14772,"logo_path":"/1XTIrcpK2JgnKn1RYgsPEJiUO0k.png","name":"Warner
         Bros. Home Entertainment Group","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2023-03-10","revenue":0,"runtime":86,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"Batman:
-        The Doom That Came to Gotham","video":false,"vote_average":6.439,"vote_count":49}'
-  recorded_at: Wed, 05 Apr 2023 00:39:10 GMT
+        The Doom That Came to Gotham","video":false,"vote_average":6.722,"vote_count":108}'
+  recorded_at: Wed, 28 Jun 2023 22:05:47 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/1003579?api_key=<MOVIE_API_KEY>
@@ -232,36 +232,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 04 Apr 2023 22:38:31 GMT
+      - Wed, 28 Jun 2023 21:51:42 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=22879
+      - public, max-age=22866
       X-Memc:
       - HIT
       X-Memc-Key:
       - befdb093a375fc558ec41211328ab887
       X-Memc-Age:
-      - '2937'
+      - '22295'
       X-Memc-Expires:
-      - '23481'
+      - '878'
       Etag:
-      - W/"a01a61476545522d126949f8c48b8a56"
+      - W/"2b160918d9080b4ccbd6ef53aed81617"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 0ecc9d4faf14441bafb84971a4117abc.cloudfront.net (CloudFront)
+      - 1.1 38059ba65876500c040fb73e2cbaebf4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - gcYWHTTQPB2zIRjZZZb4bazyNofs1Lyl9VJD-kx2O4m8sm0eHKYz-g==
+      - YTn7DB1pcPcWFWAnG23H76dtRkbhSSw0tryacAqypqcwMLXkpYKG1Q==
       Age:
-      - '7239'
+      - '845'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/7eccX0xay9pDj6ZQvU4cu3whw18.jpg","belongs_to_collection":null,"budget":0,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":27,"name":"Horror"},{"id":28,"name":"Action"},{"id":9648,"name":"Mystery"}],"homepage":"","id":1003579,"imdb_id":"tt24223450","original_language":"en","original_title":"Batman:
@@ -269,11 +269,11 @@ http_interactions:
         unleashes an ancient evil, and returns to Gotham after being away for two
         decades. There, Batman battles Lovecraftian supernatural forces and encounters
         allies and enemies such as Green Arrow, Ra''s al Ghul, Mr. Freeze, Killer
-        Croc, Two-Face and James Gordon.","popularity":869.567,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
+        Croc, Two-Face and James Gordon.","popularity":79.862,"poster_path":"/hrATQE8ScQceohwInaMluluNEaf.jpg","production_companies":[{"id":9993,"logo_path":"/2Tc1P3Ac8M479naPp1kYT3izLS5.png","name":"DC
         Entertainment","origin_country":"US"},{"id":2785,"logo_path":"/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png","name":"Warner
         Bros. Animation","origin_country":"US"},{"id":14772,"logo_path":"/1XTIrcpK2JgnKn1RYgsPEJiUO0k.png","name":"Warner
         Bros. Home Entertainment Group","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2023-03-10","revenue":0,"runtime":86,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"Batman:
-        The Doom That Came to Gotham","video":false,"vote_average":6.439,"vote_count":49}'
-  recorded_at: Wed, 05 Apr 2023 00:39:10 GMT
+        The Doom That Came to Gotham","video":false,"vote_average":6.722,"vote_count":108}'
+  recorded_at: Wed, 28 Jun 2023 22:05:47 GMT
 recorded_with: VCR 6.1.0

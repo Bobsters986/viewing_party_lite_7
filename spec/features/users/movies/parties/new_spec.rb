@@ -24,36 +24,29 @@ describe 'New Viewing Party Creation User Story 12', :vcr do
     end
   end
 
-  xit "has each existing user in the system with checkboxes to select invitees" do
-    within "#user_#{@friend_1.id}" do
-      expect(page).to have_content("#{@friend_1.name} (#{@friend_1.email})")
-      check :guest_id
-    end
-
-    within "#user_#{@friend_2.id}" do
-      expect(page).to have_content("#{@friend_2.name} (#{@friend_2.email})")
-      check :guest_id
-    end
-
-    within "#user_#{@friend_3.id}" do
-      expect(page).to have_content("#{@friend_3.name} (#{@friend_3.email})")
-      check :guest_id
-    end
+  it "has a list of friends to invite to the party" do
+    expect(page).to have_content("Invite Other Users")
+    expect(page).to have_content(@friend_1.name)
+    expect(page).to have_content(@friend_2.name)
+    expect(page).to have_content(@friend_3.name)
   end
 
-  it "creates a new party" do
+  it "creates a new party AND user_party" do
+    expect(Party.all.count).to eq(0)
+    expect(UserParty.all.count).to eq(0)
+    
     fill_in "Duration of Party", with: 100
     fill_in :day, with: "12/02/23"
     fill_in :time, with: "8:00 PM"
-
-    
 
     check @friend_1.name
     check @friend_2.name
 
     click_button "Create Party"
 
-    # expect(Party.all.count).to eq(1)
+    expect(Party.all.count).to eq(1)
+    expect(UserParty.all.count).to eq(3)
+    expect(current_path).to eq(user_path(@user))
   end
 
   describe "sad path" do
